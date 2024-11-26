@@ -150,6 +150,32 @@ document.getElementById("date&time").innerHTML = d;
 
 </script>
 
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Change Button Colour</title>
+  </head>
+  <body>
+    <button id = "ColourButton">Click me to change colour</button>
+    <script>
+      //Get a reference to the button element
+      var button = document.getElementByld("colourButton");
+
+      //Function to change the button colour 
+      function changeColour(){
+        //Generate a random colour (hexadecimal)
+        var randomColour = "#" + Math.floor(Math.random()*16777215).toString(16);
+
+        //Set the button's background colour to the random colour
+        button.style.backgroundColour=randomColor;
+      }
+
+      //Add a click event listener to the button 
+      button.addEventListener("click", changeColour);
+    </script>
+  </body>
+</html>
+
 <h3 id="Refrences">References</h3>
 
        <p>
